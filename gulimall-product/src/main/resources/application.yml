@@ -4,6 +4,14 @@ spring:
     url: jdbc:mysql://localhost:3307/gulimall_pms
     username: root
     password: root
+  cloud:
+    nacos:
+      discovery:
+        group: gulimall
+        service: gulimall-product
+        server-addr: localhost:8848
+  application:
+    name: product
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
