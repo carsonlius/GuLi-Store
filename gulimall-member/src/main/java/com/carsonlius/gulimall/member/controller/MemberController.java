@@ -34,6 +34,7 @@ public class MemberController {
     public R test(){
         MemberEntity memberEntity = new MemberEntity();
 
+        memberEntity.setNickname("liusen");
 
        R response  =  couponFeginService.memberCoupons();
        return R.ok().put("member", memberEntity).put("coupons", response.get("coupons"));
