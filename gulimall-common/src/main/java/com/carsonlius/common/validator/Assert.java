@@ -8,8 +8,8 @@
 
 package com.carsonlius.common.validator;
 
-import io.renren.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
+import com.carsonlius.common.exception.*;
 
 /**
  * 数据校验

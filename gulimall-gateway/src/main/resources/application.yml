@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        service: gulimall-gateway
+    gateway:
+      routes:
+        - id: baidu_route
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url,baidu
+
+        - id : qq_route
+          uri: https://www.qq.com
+          predicates:
+            - Query=url,qq
+            - Query=url,qq.
+            - Before=2022-01-20T17:42:47.789-07:00[America/Denver]
