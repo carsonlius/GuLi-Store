@@ -10,10 +10,7 @@ spring:
           uri: https://www.baidu.com
           predicates:
             - Query=url,baidu
-
         - id : qq_route
-          uri: https://www.qq.com
+          uri: https://github.com/alibaba/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/readme-zh.md
           predicates:
             - Query=url,qq
-            - Query=url,qq.
-            - Before=2022-01-20T17:42:47.789-07:00[America/Denver]
